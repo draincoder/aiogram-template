@@ -1,0 +1,11 @@
+[tg_bot]
+token = 5712096453:A
+admin_id = 12345678
+use_redis = false
+skip_updates = true
+
+[db]
+user = postgres
+password = postgres
+database = postgres
+host = 127.0.0.1
