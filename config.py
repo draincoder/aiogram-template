@@ -34,6 +34,7 @@ def load_config(path: str):
             token=tg_bot.get("token"),
             admin_id=tg_bot.getint("admin_id"),
             use_redis=tg_bot.getboolean("use_redis"),
+            skip_updates=tg_bot.getboolean("skip_updates"),
         ),
         db=DbConfig(**config["db"]),
     )
