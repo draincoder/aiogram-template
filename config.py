@@ -15,6 +15,7 @@ class TgBot:
     token: str
     admin_id: int
     use_redis: bool
+    skip_updates: bool
 
 
 @dataclass

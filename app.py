@@ -69,6 +69,8 @@ async def main():
 
     try:
         await set_default_commands(dp)
+        if config.tg_bot.skip_updates:
+            await dp.skip_updates()
         await dp.start_polling()
     finally:
         await dp.storage.close()
